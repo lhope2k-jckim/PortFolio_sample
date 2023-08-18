@@ -11,17 +11,31 @@ document.addEventListener('scroll', () => {
 
 // Home 섹션을 아래로 스크롤시 투명하게 처리
 const home = document.querySelector('.home__container');
-const homeHeight = home.offsetHeight;
+const _homeHeight = home.offsetHeight;
 document.addEventListener('scroll', () => {
-    home.style.opacity = 1 - window.scrollY / homeHeight;
+    home.style.opacity = 1 - window.scrollY / _homeHeight;
 });
 
 // 아래로 스크롤시, Arrow Up 버튼을 나타나게 처리
 const arrowUp = document.querySelector('.arrow-up');
 document.addEventListener('scroll', () => {
-    if (window.scrollY > homeHeight / 2.0) {
+    if (window.scrollY > _homeHeight / 2.0) {
         arrowUp.style.opacity = 1;
     } else {
         arrowUp.style.opacity = 0;
     }
+});
+
+// Navbar 토글버튼 클릭 처리
+const _navbarMenu = document.querySelector('.header__menu');
+const navbarToggle = document.querySelector('.header__toggle');
+console.log(_navbarMenu);
+console.log(navbarToggle);
+navbarToggle.addEventListener('click', () => {
+    _navbarMenu.classList.toggle('open');
+});
+
+// Navbar 메뉴 클릭시, 메뉴를 자동으로 닫아줌
+_navbarMenu.addEventListener('click', () => {
+    _navbarMenu.classList.remove('open');
 });
