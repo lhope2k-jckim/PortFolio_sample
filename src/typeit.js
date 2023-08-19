@@ -6,11 +6,11 @@ new TypeIt('.home__title--strong', {
         loop: true,
         speed: 200,
     }) // Father|
-    .pause(sleepTime)
+    .pause(sleepTime*2)
     .move(-6)                   // |Farther
     .type('Amzing ')            // Amazing |Father
     .move(null, { to: 'END' })  // Amazing Father|
-    .pause(sleepTime*2)
+    .pause(sleepTime*4)
     .delete()                   //
     .type('Back-end Engineer')  // Back-end Engineer|
     .pause(sleepTime)
