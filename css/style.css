@@ -484,6 +484,20 @@ button:focus {
     color: var(--color-accent);
 }
 
+.contact__extra {
+    font-size: 1rem;
+    text-align: left;
+    margin: 1rem;
+    opacity: 0.6;
+}
+
+.contact_extra__description {
+    font-size: 0.8rem;
+    text-align: left;
+    margin-top: 0.5rem;
+    opacity: 0.5;
+}
+
 
 @media screen and (max-width:768px) {
     .section {
