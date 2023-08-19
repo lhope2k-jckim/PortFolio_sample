@@ -21,12 +21,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap" rel="stylesheet" />
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/4013e7aa2d.js" crossorigin="anonymous"></script>
+    <!-- TypeIt-->
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css" />
     <!-- JavaScript -->
     <script type="module" src="src/main.js" defer></script>
     <script type="module" src="src/projects.js" defer></script>
     <script type="module" src="src/active_menu.js" defer></script>
+    <script type="module" src="src/typeit.js" defer></script>
 </head>
 
 <body>
@@ -80,12 +83,12 @@
         <section id="home">
             <div class="home__container">
                 <img class="home__avatar" src="images/Profile-removebg-preview.png" alt="LHOPE's profile" />
-                <h2 class="home__title">
+                <h2 class="home__title" aria-label="Hello, I'm Father, Lhope">
                     Hello
                     <br />
                     I&#39;m
-                    <strong class="home__title--strong">Father</strong>
-                    , Lhope
+                    <strong class="home__title--strong">Father</strong>,
+                    Lhope
                 </h2>
                 <p class="home__description">A software programmer currently residing in Asan</p>
                 <a class="home__contact" href="#contact">
