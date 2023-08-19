@@ -1,16 +1,16 @@
 'use strict';
 
-const sleepTime = 1000;
+const sleepTime = 2000;
 
 new TypeIt('.home__title--strong', {
         loop: true,
         speed: 200,
     }) // Father|
-    .pause(sleepTime*2)
+    .pause(sleepTime)
     .move(-6)                   // |Farther
     .type('Amzing ')            // Amazing |Father
     .move(null, { to: 'END' })  // Amazing Father|
-    .pause(sleepTime*4)
+    .pause(sleepTime*3)
     .delete()                   //
     .type('Back-end Engineer')  // Back-end Engineer|
     .pause(sleepTime)
@@ -23,6 +23,6 @@ new TypeIt('.home__title--strong', {
     .delete()                   // | Engineer
     .type('Full-stack')         // Full-stack Engineer
     .move(null, { to: 'END' })  // Full-stack Engineer|
-    .pause(sleepTime*2)
+    .pause(sleepTime)
     .empty()                    // |
     .go();
